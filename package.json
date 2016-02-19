@@ -1,0 +1,24 @@
+{
+  "name": "tapakai",
+  "version": "1.0.0",
+  "description": "general purpose components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maneeshpal/tapakai.git"
+  },
+  "keywords": [
+    "maneeshpal",
+    "react",
+    "components"
+  ],
+  "author": "Maneeshpal Bandlamudi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maneeshpal/tapakai/issues"
+  },
+  "homepage": "https://github.com/maneeshpal/tapakai#readme"
+}
