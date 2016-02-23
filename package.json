@@ -4,7 +4,7 @@
   "description": "general purpose components",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "webpack": "webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,28 @@
   "bugs": {
     "url": "https://github.com/maneeshpal/tapakai/issues"
   },
-  "homepage": "https://github.com/maneeshpal/tapakai#readme"
+  "homepage": "https://github.com/maneeshpal/tapakai#readme",
+  "dependencies": {
+    "immstruct": "^2.0.0",
+    "react": "^0.14.7",
+    "react-addons-pure-render-mixin": "^0.14.7"
+  },
+  "devDependencies": {
+    "babel-core": "^6.5.2",
+    "babel-loader": "^6.2.3",
+    "babel-plugin-transform-runtime": "^6.5.2",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "compression": "^1.6.1",
+    "css-loader": "^0.23.1",
+    "ejs": "^1.0.0",
+    "express": "^4.13.4",
+    "express-ejs-layouts": "^1.1.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "node-sass": "^3.4.2",
+    "react-dom": "^0.14.7",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.9"
+  }
 }
