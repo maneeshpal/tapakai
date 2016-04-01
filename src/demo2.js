@@ -4,6 +4,7 @@ import PureRenderMixin from 'react-addons-pure-render-mixin';
 import { H1, H2 } from './components/Typography';
 import AlertBox from './components/AlertBox';
 import immstruct from 'immstruct';
+import AlertBoxDemo from './components/AlertBoxDemo';
 
 const structure = immstruct({
     items: [{
@@ -23,6 +24,7 @@ const App = React.createClass({
 			<div>
 				<H2>Checkout my alertbox</H2>
 				<AlertBox>Hello, im an alert</AlertBox>
+				<AlertBoxDemo />
 			</div>
 		);
 	}

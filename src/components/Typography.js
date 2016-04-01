@@ -1,6 +1,8 @@
 import React from 'react';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
 
+
+import './_font.scss';
 require('./_typography.scss');
 
 const H1 = React.createClass({

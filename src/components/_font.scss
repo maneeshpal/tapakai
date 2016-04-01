@@ -1,0 +1,22 @@
+
+@import './settings';
+
+@mixin fontFace ($font-family, $font-format) {
+	font-family: $font-family;
+    src: url($font-format) format('woff');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+	@include fontFace($font-family: $lato-font, $font-format: $type-path + 'Lato-Regular.woff');
+}
+
+@font-face {
+	@include fontFace($font-family: $lato-bold-font, $font-format: $type-path + 'Lato-Bold.woff');
+}
+
+@font-face {
+	@include fontFace($font-family: $lato-black-font, $font-format: $type-path + 'Lato-Black.woff');
+}

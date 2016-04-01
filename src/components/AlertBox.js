@@ -2,7 +2,9 @@
 import React from 'react';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
 
+import './_font.scss';
 import './_alertbox.scss';
+
 
 const AlertBox = React.createClass({
 	mixins: [PureRenderMixin],

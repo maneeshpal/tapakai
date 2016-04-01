@@ -1,6 +1,7 @@
 
 var path = require('path');
-var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
+
 var webpack = require('webpack');
 
 module.exports = {
@@ -10,7 +11,7 @@ module.exports = {
     },
 
     output: {
-        path: __dirname + '/public/js',
+        path: path.join(__dirname, '/public'),
         filename: '[name].js',
         chunkFilename: '[id].js'
     },
@@ -23,13 +24,15 @@ module.exports = {
                     path.resolve(__dirname, './src')
                 ],
                 query: {
-                    plugins: ['transform-runtime'],
-                    presets: ['es2015', 'react'],
+                    presets: ['es2015', 'react']
                 }
             }, 
-            {
-                test: /\.scss$/,
-                loader: ExtractTextPlugin.extract("css-loader!sass-loader"),
+            { 
+                test: /.(png|woff(2)?|eot|ttf|svg|jpg)(\?[a-z0-9=\.]+)?$/, 
+                loader: 'url-loader?limit=100000'
+            }, {
+                test: /\.(scss|css)?$/,
+                loader: ExtractTextPlugin.extract("css!sass"),
                 include: [
                     path.resolve(__dirname, './src')
                 ]
